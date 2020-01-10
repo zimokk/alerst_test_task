@@ -3,8 +3,7 @@ import { TIME_VALUES } from '../../../shared/const';
 
 @Component({
   selector: 'app-notification-temistamp',
-  templateUrl: './notification-temistamp.component.html',
-  styleUrls: ['./notification-temistamp.component.scss'],
+  template: '{{ createdText }}',
 })
 export class NotificationTemistampComponent implements OnChanges {
   @Input() groupIndex: number;
