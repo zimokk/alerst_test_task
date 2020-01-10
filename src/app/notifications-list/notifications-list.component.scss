@@ -1,0 +1,20 @@
+app-notification-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #e0e3e0;
+  background-color: #ebefc6;
+  padding: 10px;
+}
+
+.groupList {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.groupTitle {
+  text-align: center;
+  font-size: 23px;
+  padding: 20px;
+}

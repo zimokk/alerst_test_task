@@ -1,0 +1,13 @@
+<div *ngFor="let notificationsList of list | async; let arrayIndex = index">
+  <div class="groupTitle" *ngIf="notificationsList.length">
+    {{ GROUPS_HEADERS[arrayIndex] }}
+  </div>
+  <div class="groupList">
+    <app-notification-list-item
+      *ngFor="let notification of notificationsList"
+      [notification]="notification"
+      (removeEvent)="removeNotification($event)"
+    >
+    </app-notification-list-item>
+  </div>
+</div>
